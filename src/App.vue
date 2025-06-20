@@ -1,12 +1,22 @@
 <template>
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#guestbook">Guestbook</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <div id="app">
-    <section class="profile">
-      <img src="https://i.pravatar.cc/120" alt="Your Name" class="avatar" />
-      <h1>Your Name</h1>
-      <p>Short bio about yourself. Vue.js developer. 🚀</p>
-      <a href="mailto:you@example.com">Contact Me</a>
+    <section class="hero">
+      <img src="https://i.pravatar.cc/140" alt="Your Avatar" class="avatar" />
+      <h1>Welcome to Angelo's Space!</h1>
+      <p class="tagline">Aspiring developer & gaming enthusiast.</p>
     </section>
+    <About />
+    <Skills />
+    <Projects />
     <Guestbook />
+    <Contact />
   </div>
   <div id="app">
     <video autoplay muted loop playsinline class="background-video">
@@ -20,15 +30,17 @@
 </template>
 
 <script setup>
+import About from './components/About.vue';
 import Guestbook from './components/Guestbook.vue'
+import Skills from './components/Skills.vue';
 </script>
 
 <style scoped>
 body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #2A1A4D, #4B367C);
   color: #F0F0F5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
   min-height: 100vh;
 }
 
@@ -37,6 +49,30 @@ body {
   min-height: 100vh;
   overflow: hidden;
   color: white;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(42, 26, 77, 0.95);
+  padding: 1rem 0;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.navbar a {
+  color: #D9A9E3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #F0F0F5;
 }
 
 .background-video {
@@ -67,7 +103,31 @@ body {
   border: 3px solid #D9A9E3;
   box-shadow: 0 0 15px #D9A9E3;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: rgba(42, 26, 77, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #BFA6E8;
+}
+
+@media (max-width: 600px) {
+  #app {
+    padding: 1rem;
+  }
+  .avatar {
+    width: 90px;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #E6D9F7;
 }
 
 .avatar:hover {
