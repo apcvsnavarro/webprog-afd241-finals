@@ -8,13 +8,22 @@
     </section>
     <Guestbook />
   </div>
+  <div id="app">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="/robin1440.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <!-- Your profile and other components here -->
+    </div>
+  </div>
 </template>
 
 <script setup>
 import Guestbook from './components/Guestbook.vue'
 </script>
 
-<style>
+<style scoped>
 body {
   background: linear-gradient(135deg, #2A1A4D, #4B367C);
   color: #F0F0F5;
@@ -24,12 +33,27 @@ body {
 }
 
 #app {
-  max-width: 900px;
-  margin: 2rem auto;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.background-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* So clicks pass through */
+  filter: brightness(0.6); /* Optional: darken video for readability */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
   padding: 2rem;
-  background: rgba(75, 54, 124, 0.85);
-  border-radius: 16px;
-  box-shadow: 0 0 20px #BFA6E8;
 }
 
 .profile {
