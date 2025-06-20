@@ -6,8 +6,8 @@
     </p>
     <ul class="contact-list">
       <li>
-        <a href="mailto:your.email@example.com">
-          <span>📧</span> vsnavarro@student.apc.edu.ph
+        <a href="mailto:vsnavarro@student.apc.edu.ph">
+          <span>📧</span> Email
         </a>
       </li>
       <li>
