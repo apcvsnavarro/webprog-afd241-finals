@@ -7,16 +7,16 @@
     <ul class="contact-list">
       <li>
         <a href="mailto:your.email@example.com">
-          <span>📧</span> your.email@example.com
+          <span>📧</span> vsnavarro@student.apc.edu.ph
         </a>
       </li>
       <li>
-        <a href="https://github.com/your-github" target="_blank" rel="noopener">
+        <a href="https://github.com/apcvsnavarro" target="_blank" rel="noopener">
           <span>🐱</span> GitHub
         </a>
       </li>
       <li>
-        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/vsnavarro/" target="_blank" rel="noopener">
           <span>🔗</span> LinkedIn
         </a>
       </li>
