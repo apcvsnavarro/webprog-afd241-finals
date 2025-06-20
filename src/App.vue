@@ -8,7 +8,7 @@
   </nav>
   <div id="app">
     <section class="hero">
-      <img src="https://i.pravatar.cc/140" alt="Your Avatar" class="avatar" />
+      <img src="/withrobin.jpg" alt="Your Avatar" class="avatar" />
       <h1>Welcome to Angelo's Space!</h1>
       <p class="tagline">Aspiring developer & gaming enthusiast.</p>
     </section>
@@ -31,7 +31,9 @@
 
 <script setup>
 import About from './components/About.vue';
+import Contact from './components/Contact.vue';
 import Guestbook from './components/Guestbook.vue'
+import Projects from './components/Projects.vue';
 import Skills from './components/Skills.vue';
 </script>
 
