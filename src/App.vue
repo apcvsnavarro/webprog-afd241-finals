@@ -7,7 +7,7 @@ import Skills from './components/Skills.vue';
 
 import { ref, onMounted } from 'vue'
 
-const isMuted = ref(true)
+const isMuted = ref(false)
 const bgm = ref(null)
 
 const toggleMute = () => {
