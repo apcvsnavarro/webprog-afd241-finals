@@ -81,7 +81,7 @@ const closeMenu = () => {
 
     <div class="content">
       <section class="hero">
-        <img src="/angelo.jpg" alt="Your Avatar" class="avatar" />
+        <img src="/angelo5.jpg" alt="Your Avatar" class="avatar" />
         <h1>Welcome to Angelo's World!</h1>
         <p class="tagline">Welcome to my world~</p>
       </section>
