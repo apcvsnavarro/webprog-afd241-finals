@@ -16,6 +16,7 @@
     <p>I Assembled my first computer at age 13 by myself (Thanks Youtube)</p>
     <p>I also helped a lot of friends build and troubleshoot their PCs throughout the years</p>
     <p>I have completed work immersion at Development Bank of the Philippines (DBP) Head Office, working with the IT team on the bank's website</p>
+    <p>I have been working for lenovo as a tech guy for their events since last year</p>
     <h2>Goals & Dreams</h2>
     <p>My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.</p>
   </section>
