@@ -1,6 +1,7 @@
 <template>
   <section class="guestbook" id="guestbook">
     <h2>Guestbook</h2>
+    <p>Please leave a message before proceeding xD</p>
     <form @submit.prevent="addComment">
       <input v-model="name" placeholder="Your name" required />
       <textarea v-model="message" placeholder="Your message" required></textarea>
@@ -49,6 +50,12 @@ onMounted(fetchComments)
 }
 
 .guestbook h2 {
+  color: #D9A9E3;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+.guestbook p {
   color: #D9A9E3;
   margin-bottom: 1rem;
   text-align: center;

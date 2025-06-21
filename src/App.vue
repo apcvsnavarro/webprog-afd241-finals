@@ -72,10 +72,10 @@ const closeMenu = () => {
     </button>
     <ul :class="['nav-links', { open: menuOpen }]">
       <li><a href="#about" @click="closeMenu">About</a></li>
+      <li><a href="#guestbook" @click="closeMenu">Guestbook</a></li>
       <li><a href="#skills" @click="closeMenu">Skills</a></li>
       <li><a href="#projects" @click="closeMenu">Projects</a></li>
       <li><a href="#contact" @click="closeMenu">Contact</a></li>
-      <li><a href="#guestbook" @click="closeMenu">Guestbook</a></li>
     </ul>
     </nav>
 
@@ -87,10 +87,10 @@ const closeMenu = () => {
       </section>
 
       <About />
+      <Guestbook />
       <Skills />
       <Projects />
       <Contact />
-      <Guestbook />
 
     </div>
 </template>
