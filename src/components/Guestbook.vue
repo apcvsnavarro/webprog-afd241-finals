@@ -1,5 +1,5 @@
 <template>
-  <div class="guestbook">
+  <section class="guestbook" id="guestbook">
     <h2>Guestbook</h2>
     <form @submit.prevent="addComment">
       <input v-model="name" placeholder="Your name" required />
@@ -11,7 +11,7 @@
         <strong>{{ comment.name }}</strong>: {{ comment.message }}
       </li>
     </ul>
-  </div>
+    </section>
 </template>
 
 <script setup>

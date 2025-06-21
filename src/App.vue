@@ -5,10 +5,50 @@ import Guestbook from './components/Guestbook.vue';
 import Projects from './components/Projects.vue';
 import Skills from './components/Skills.vue';
 
-</script>
+import { ref, onMounted } from 'vue'
 
+const isMuted = ref(true)
+const bgm = ref(null)
+
+const toggleMute = () => {
+  isMuted.value = !isMuted.value
+  if (bgm.value) {
+    bgm.value.muted = isMuted.value
+    if (!isMuted.value) {
+      bgm.value.play()
+    }
+  }
+}
+
+// Optionally, autoplay muted on mount (for browser compatibility)
+onMounted(() => {
+  if (bgm.value) {
+    bgm.value.muted = isMuted.value
+    bgm.value.play().catch(() => {})
+  }
+})
+</script>
+ 
 <template>
-  <div id="app">
+    <div>
+    <!-- Music Controls -->
+    <button @click="toggleMute" class="music-btn">
+      <span v-if="isMuted">🔇</span>
+      <span v-else>🔊</span>
+    </button>
+    <audio
+      ref="bgm"
+      src="/robinsong.mp3"
+      loop
+      autoplay
+      :muted="isMuted"
+    ></audio>
+    <!-- Rest of your site -->
+    <NavBar />
+    <div class="main-container">
+      <!-- Sections -->
+    </div>
+  </div>
     <video autoplay muted loop playsinline class="background-video">
       <source src="/robin1440.mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -18,13 +58,13 @@ import Skills from './components/Skills.vue';
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#guestbook">Guestbook</a>
       <a href="#contact">Contact</a>
+      <a href="#guestbook">Guestbook</a>
     </nav>
 
     <div class="content">
       <section class="hero">
-        <img src="/withrobin.jpg" alt="Your Avatar" class="avatar" />
+        <img src="/angelo.jpg" alt="Your Avatar" class="avatar" />
         <h1>Welcome to Angelo's Space!</h1>
         <p class="tagline">Aspiring developer & gaming enthusiast.</p>
       </section>
@@ -32,12 +72,33 @@ import Skills from './components/Skills.vue';
       <About />
       <Skills />
       <Projects />
-      <Guestbook />
       <Contact />
+      <Guestbook />
+
     </div>
-  </div>
 </template>
+
 <style>
+.music-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  background: rgba(42, 26, 77, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #d9a9e3;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #bfa6e8;
+  transition: background 0.2s;
+}
+.music-btn:hover {
+  background: #bfa6e8;
+  color: #2a1a4d;
+}
 #app {
   position: relative;
   min-height: 100vh;
