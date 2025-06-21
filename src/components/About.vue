@@ -2,8 +2,8 @@
   <section class="about" id="about">
     <h2>About Me</h2>
     <p>
-      Hi! I'm Angelo, a web developer passionate about building modern, interactive websites with Vue.js.
-      I enjoy creating gaming-themed projects and exploring new web technologies.
+      Hi! I'm Angelo, currently studying web programming and passionate about building modern, interactive websites with Vue.js.
+      I enjoy creating this Robin from Honkai Star Rail themed project and exploring new web technologies.
       This site is hosted on Vercel and features a live guestbook powered by Supabase.
     </p>
     <p>
