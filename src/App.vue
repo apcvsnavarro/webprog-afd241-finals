@@ -27,6 +27,17 @@ onMounted(() => {
     bgm.value.play().catch(() => {})
   }
 })
+
+
+const menuOpen = ref(false)
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value
+}
+
+const closeMenu = () => {
+  menuOpen.value = false
+}
 </script>
  
 <template>
@@ -55,11 +66,17 @@ onMounted(() => {
     </video>
 
     <nav class="navbar">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="#guestbook">Guestbook</a>
+    <div class="logo">MySite</div>
+    <button class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
+      ☰
+    </button>
+    <ul :class="['nav-links', { open: menuOpen }]">
+      <li><a href="#about" @click="closeMenu">About</a></li>
+      <li><a href="#skills" @click="closeMenu">Skills</a></li>
+      <li><a href="#projects" @click="closeMenu">Projects</a></li>
+      <li><a href="#contact" @click="closeMenu">Contact</a></li>
+      <li><a href="#guestbook" @click="closeMenu">Guestbook</a></li>
+    </ul>
     </nav>
 
     <div class="content">
@@ -78,11 +95,85 @@ onMounted(() => {
     </div>
 </template>
 
+<style scoped>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(42, 26, 77, 0.95);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  color: #d9a9e3;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  color: #d9a9e3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #f0f0f5;
+}
+
+/* Hamburger button hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #d9a9e3;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 60px; /* height of navbar */
+    right: 0;
+    background: rgba(42, 26, 77, 0.95);
+    height: calc(100vh - 60px);
+    width: 200px;
+    flex-direction: column;
+    transform: translateX(100%);
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  }
+  .nav-links.open {
+    transform: translateX(0);
+  }
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+}
+</style>
+
 <style>
 .music-btn {
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   z-index: 100;
   background: rgba(42, 26, 77, 0.85);
   border: none;
