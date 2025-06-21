@@ -69,4 +69,10 @@
   width: 24px;
   height: 24px;
 }
+
+.skills h2 {
+  color: #d9a9e3;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 </style>

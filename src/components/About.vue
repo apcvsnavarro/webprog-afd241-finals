@@ -1,8 +1,9 @@
 <template>
   <section class="about" id="about">
     <h2>About Me</h2>
-    <p>
-      Hi I'm Angelo, I </p> 
+    <p>Hi, I’m Angelo, an IT student passionate about technology and learning. This website is a space where I share a bit about myself, my interests, and my journey as a student. Whether you’re curious about my projects, want to connect, or just want to learn more about me, you’re in the right place.</p>
+    <p>Feel free to explore, and don’t hesitate to reach out if you want to chat, collaborate, or just say hello. I’m always open to meeting fellow colleagues and exchanging ideas!</p>
+    <p>Thanks for visiting! </p> 
     <h2>Education & Achievements</h2>
     <p>-Graduated Senior High School at AMA Makati</p>
     <p>-Currently studying Information Technology: Mobile/Internet at Asia Pacific College</p>
@@ -14,10 +15,6 @@
     <p>-My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.</p><br>
     <p>I enjoyed creating this Robin from Honkai Star Rail themed project and exploring new web technologies.
       This site is hosted on Vercel and features a live guestbook powered by Supabase.
-    </p>
-    <p>
-      My goal is to design engaging, responsive experiences for all users—whether on desktop, tablet, or mobile.
-      Feel free to explore, leave a message, or connect!
     </p>
   </section>
 </template>
