@@ -49,7 +49,7 @@ const closeMenu = () => {
     </button>
     <audio
       ref="bgm"
-      src="/robinsong.mp3"
+      src="/welcometomy.mp3"
       loop
       autoplay
       :muted="isMuted"
@@ -82,8 +82,8 @@ const closeMenu = () => {
     <div class="content">
       <section class="hero">
         <img src="/angelo.jpg" alt="Your Avatar" class="avatar" />
-        <h1>Welcome to Angelo's Space!</h1>
-        <p class="tagline">Aspiring developer & gaming enthusiast.</p>
+        <h1>Welcome to Angelo's World!</h1>
+        <p class="tagline">Welcome to my world~</p>
       </section>
 
       <About />
