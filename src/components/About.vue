@@ -3,13 +3,6 @@
     <h2>About Me</h2>
     <p>
       Hi I'm Angelo, I am a third-year (irregular) student at Asia Pacific College, majoring in Information Technology with a focus on Mobile and Internet technologies. I have been passionate about computers since I was young.</p> 
-      <p>I enjoyed creating this Robin from Honkai Star Rail themed project and exploring new web technologies.
-      This site is hosted on Vercel and features a live guestbook powered by Supabase.
-    </p>
-    <p>
-      My goal is to design engaging, responsive experiences for all users—whether on desktop, tablet, or mobile.
-      Feel free to explore, leave a message, or connect!
-    </p>
     <h2>Education & Achievements</h2>
     <p>-Graduated Senior High School at AMA Makati</p>
     <p>-Currently studying Information Technology: Mobile/Internet at Asia Pacific College</p>
@@ -18,7 +11,14 @@
     <p>-Helped a lot of friends build and troubleshoot their PCs throughout the years</p>
     <p>-Completed work immersion at Development Bank of the Philippines (DBP) Head Office, working with the IT team on the bank's website</p>
     <h2>Goals & Dreams</h2>
-    <p>-My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.</p>
+    <p>-My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.</p><br>
+    <p>I enjoyed creating this Robin from Honkai Star Rail themed project and exploring new web technologies.
+      This site is hosted on Vercel and features a live guestbook powered by Supabase.
+    </p>
+    <p>
+      My goal is to design engaging, responsive experiences for all users—whether on desktop, tablet, or mobile.
+      Feel free to explore, leave a message, or connect!
+    </p>
   </section>
 </template>
 
