@@ -1,6 +1,6 @@
 <template>
   <section class="projects" id="projects">
-    <h2>Gallery</h2>
+    <h2>Projects</h2>
     <div class="project-list">
       <div class="project-card">
         <h3>Personal Profile Website</h3>
