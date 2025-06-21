@@ -86,7 +86,8 @@ const closeMenu = () => {
         <p class="tagline">Renew your definition~<br>
         World so high, let me show~<br>
         And hear my declaration~<br>
-        "No more ties"</p>
+        "No more ties"<br>
+        -Robin, Honkai Star Rail</p>
       </section>
 
       <About />
