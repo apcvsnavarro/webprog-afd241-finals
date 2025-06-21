@@ -2,7 +2,7 @@
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
 import Guestbook from './components/Guestbook.vue';
-import Projects from './components/Projects.vue';
+import ArtGallery from './components/ArtGallery.vue';
 import Skills from './components/Skills.vue';
 
 import { ref, onMounted } from 'vue'
@@ -74,7 +74,7 @@ const closeMenu = () => {
       <li><a href="#about" @click="closeMenu">About</a></li>
       <li><a href="#guestbook" @click="closeMenu">Guestbook</a></li>
       <li><a href="#skills" @click="closeMenu">Skills</a></li>
-      <li><a href="#projects" @click="closeMenu">Projects</a></li>
+      <li><a href="#artgallery" @click="closeMenu">ArtGallery</a></li>
       <li><a href="#contact" @click="closeMenu">Contact</a></li>
     </ul>
     </nav>
