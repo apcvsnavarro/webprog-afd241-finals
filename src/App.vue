@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
+import Gallery from './components/Gallery.vue';
 import Guestbook from './components/Guestbook.vue';
 import Projects from './components/Projects.vue';
 import Skills from './components/Skills.vue';
@@ -92,6 +93,7 @@ const closeMenu = () => {
 
       <About />
       <Guestbook />
+      <Gallery />
       <Skills />
       <Projects />
       <Contact />
