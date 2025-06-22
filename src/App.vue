@@ -39,9 +39,21 @@ const toggleMenu = () => {
 const closeMenu = () => {
   menuOpen.value = false
 }
+
+import Particles from "tsparticles/vue3";
+const particlesOptions = {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#d9a9e3" },
+    shape: { type: "circle" },
+    size: { value: 3 },
+    move: { enable: true, speed: 1 }
+  }
+}
 </script>
  
 <template>
+  
     <div>
     <!-- Music Controls -->
     <button @click="toggleMute" class="music-btn">
@@ -61,6 +73,8 @@ const closeMenu = () => {
       <!-- Sections -->
     </div>
   </div>
+    <Particles id="tsparticles" :options="particlesOptions" />
+  <!-- Your content here -->
     <video autoplay muted loop playsinline class="background-video">
       <source src="/robin1440.mp4" type="video/mp4" />
       Your browser does not support the video tag.
