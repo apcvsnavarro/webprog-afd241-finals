@@ -68,7 +68,7 @@ const closeMenu = () => {
     </video>
 
     <nav class="navbar">
-    <div class="logo">Personal Website</div>
+    <div class="logo">WEBPROG-FINALS</div>
     <button class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
       ☰
     </button>
